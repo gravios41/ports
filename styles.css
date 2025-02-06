@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    background-color: #ffdde1;
+    font-family: "Arial", sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    color: #d63384;
+    font-size: 2.5em;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+    position: relative;
+}
+
+.yes-btn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.yes-btn:hover {
+    background-color: #e63950;
+    transform: scale(1.1);
+}
+
+.no-btn {
+    background-color: #6c757d;
+    color: white;
+    position: absolute;
+    transition: left 0.2s, top 0.2s;
+}
+
+#message {
+    font-size: 1.5em;
+    color: #ff4d6d;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Floating Hearts */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: floatUp 3s linear infinite;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
